@@ -1,0 +1,763 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a{
+	
+	text-decoration: none;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('../fonts/fjalla/FjallaOne.eot');
+    src: url('../fonts/fjalla/FjallaOne.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fjalla/FjallaOne.woff2') format('woff2'),
+        url('../fonts/fjalla/FjallaOne.woff') format('woff'),
+        url('../fonts/fjalla/FjallaOne.ttf') format('truetype'),
+        url('../fonts/fjalla/FjallaOne.svg#FjallaOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Extrabold.eot');
+    src: url('../fonts/open-sans/OpenSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Extrabold.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Extrabold.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Extrabold.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Extrabold.svg#OpenSans-Extrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Bold.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans-regular';
+    src: url('../fonts/open-sans/OpenSans.eot');
+    src: url('../fonts/open-sans/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Light.eot');
+    src: url('../fonts/open-sans/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/open-sans/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/open-sans/OpenSans-Light.woff') format('woff'),
+        url('../fonts/open-sans/OpenSans-Light.ttf') format('truetype'),
+        url('../fonts/open-sans/OpenSans-Light.svg#OpenSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* =============================================
+			  Start Heading Section                 
+================================================= */
+.header-secrtion{
+	width: 100%;
+	padding: 20px 0px 200px 0px;
+	background-image:url(../images/banner-bg.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+.header-secrtion .header{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-secrtion .header .heder-logo{
+	width: 30%;
+	float: left;
+}
+
+.header-secrtion .header .heder-logo img{
+	width: 50%;
+}
+.header-secrtion .header .heder-menu{
+	width: 70%;
+	float: left;
+}
+
+.header-secrtion .header .heder-menu ul{
+	text-align: right;
+}
+.header-secrtion .header .heder-menu ul li{
+	display: inline;
+}
+.header-secrtion .header .heder-menu ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	font-family: 'Open Sans-regular';
+	font-size: 16px;
+}
+
+.header-secrtion .header .heder-menu ul li a:hover{
+	color: #261e6b;
+	background: #fff;
+	border-radius: 10px;
+}
+.header-secrtion .banner{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-secrtion .banner h2{
+	font-size: 50px;
+	line-height: 70px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #fff;
+	font-family: 'FjallaOne';
+	margin-top: 140px;
+}
+.header-secrtion .banner p{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Open Sans-regular';
+	margin-top: 20px;
+}
+.header-secrtion .banner .banner-btn{
+	margin-top: 40px;
+}
+.header-secrtion .banner .banner-btn a{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #261e6b;
+	padding: 10px 30px;
+	background: #fff;
+	font-family: 'OpenSans-Bold';
+	border: 2px solid transparent;
+}
+
+.header-secrtion .banner .banner-btn a:hover{
+	border: 2px solid #fff;
+	background: transparent;
+	color: #fff;
+}
+/* =============================================
+			  End Heading Section                 
+================================================= */
+
+/* =============================================
+			  Start-secrvices Section                 
+================================================= */
+.services-section{
+	width: 100%;
+}
+
+.services-section .services{
+	width: 80%;
+	margin: 0 auto;
+}
+.services-section .services-left{
+	width: 40%;
+	float: left;
+}
+
+.services-section .services-left h5{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 190px;
+}
+.services-section .services-left p{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #261e6b;
+	font-family: 'Open Sans-regular';
+	margin-top: 0px;
+}
+.services-section .services-left .services-btn{
+	margin-top: 20px;
+}
+.services-section .services-left .services-btn a{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 30px;
+	background: #261e6b;
+	font-family: 'OpenSans-Bold';
+}
+
+.services-section .services-left .services-btn a:hover{
+	border: 2px solid #261e6b;
+	background: transparent;
+	color: #261e6b;
+}
+/* right */
+.services-section .services-right{
+	width: 60%;
+	float: left;
+}
+
+.services-right-top{
+	width: 100%;
+}
+
+.services-inner{
+	width: 45%;
+	float: left;
+	margin-right:5%;
+	text-align: center;
+	border: 2px solid #e5e4ea !important;
+	border-radius: 10px;
+}
+
+.services-inner:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+	border: 2px solid transparent !important;
+}
+
+.services-inner img{
+	width: 30%;
+	margin-top: 40px;
+}
+
+.services-inner h6{
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #2b2828;
+	font-family: 'FjallaOne';
+	margin-top: 20px;
+}
+.services-inner p{
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.services-right-bottom .services-inner{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* =============================================
+			  end-secrvices Section                 
+================================================= */
+
+/* =============================================
+			  Start devolepment Section                 
+================================================= */
+.devolepment-section{
+	width: 100%;
+	height: 500px;
+	background-image: url(../images/devolepment.png);
+	background-repeat: no-repeat;
+	background-position: 0% 60%;
+	background-size: 45%;
+}
+.devolepment-section .devolepment{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.devolepment-section .devolepment .devolepment-left{
+	width: 45%;
+	float: left;
+	padding: 60px 0px;
+}
+
+.devolepment-section .devolepment .devolepment-right{
+	width: 55%;
+	float: left;
+}
+.devolepment-section .devolepment h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 70px;
+}
+.devolepment-section .devolepment p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 20px;
+}
+.devolepment-section .devolepment .devolepment-btn{
+	margin-top: 40px;
+}
+.devolepment-section .devolepment .devolepment-btn a{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 30px;
+	background: #261e6b;
+	font-family: 'OpenSans-Bold';
+}
+
+.devolepment-section .devolepment .devolepment-btn a:hover{
+	border: 2px solid #261e6b;
+	color: #261e6b;
+	background: transparent;
+}
+/* =============================================
+			  Start devolepment Section                 
+================================================= */
+
+/* =============================================
+			  Start number Section                 
+================================================= */
+.number-section{
+	width: 100%;
+	background-image: url(../images/number-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.number-section .number{
+	width: 80%;
+	margin: 0 auto;
+}
+.number-section .number .number-inner{
+	width: 25%;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+
+.number-section .number .number-inner h5{
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-family: 'FjallaOne';
+	margin-top: 40px;
+}
+.number-section .number .number-inner p{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	font-family: 'Open Sans-regular';
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+/* =============================================
+			  End number Section                 
+================================================= */
+
+/* =============================================
+			  Start 4th-images Section                 
+================================================= */
+.four-images-title{
+	width: 100%;
+}
+
+.four-images-title-inner{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.four-images-title-inner h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 70px;
+}
+.four-images-title-inner p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+/* .four-images */
+
+.four-images{
+	width: 100%;
+	height: 400px;
+	background-image: url(../images/4th-images.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/* =============================================
+			  Start 4th-images Section                 
+================================================= */
+
+/* =============================================
+			  Start valuable Section                 
+================================================= */
+.valuable-section{
+	width: 100%;
+}
+.valuable-section .valuable{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.valuable-section .valuable h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 70px;
+}
+.valuable-section .valuable p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.valuable-section .valuable .valuable-inner{
+	width: 25%;
+	height: 150px;
+	float: left;
+	border-bottom: 2px solid #e5e4ea;
+	border-right: 2px solid #e5e4ea;
+}
+
+.valuable-section .valuable .valuable-inner:hover{
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
+	border: transparent;
+}
+
+.valuable-section .valuable .valuable-inner:nth-child(5){
+	border-right: 2px solid transparent;
+}
+
+.valuable-section .valuable .valuable-inner:nth-child(9){
+	border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+}
+.valuable-section .valuable .valuable-inner:nth-child(6){
+	border-bottom: 2px solid transparent;
+}
+
+.valuable-section .valuable .valuable-inner:nth-child(7){
+	border-bottom: 2px solid transparent;
+}
+
+.valuable-section .valuable .valuable-inner:nth-child(8){
+	border-bottom: 2px solid transparent;
+}
+.valuable-section .valuable .valuable-inner img{
+	width: 40%;
+	padding-top: 35px;
+}
+/* =============================================
+			  End valuable Section                 
+================================================= */
+
+/* =============================================
+			  Start news Section                 
+================================================= */
+.news-section{
+	width: 100%;
+}
+
+.news-section .news{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.news .news-title h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 70px;
+	text-align: center;
+}
+.news .news-title p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+/* news-inner */
+
+.news-section .news .news-inner{
+	width: 32%;
+	float: left;
+	margin-right: 2%;
+	
+}
+
+.news-section .news .news-inner:hover{
+	box-shadow: 0 5px 14px rgba(0, 0, 0, .25);
+}
+
+.news-section .news .news-inner:hover .news-text{
+	border: 2px solid transparent !important;
+}
+.news-section .news .news-inner:last-child{
+	margin-right: 0%;
+}
+.news-section .news .news-inner .news-img{}
+.news-section .news .news-inner .news-img img{
+	width: 100%;
+}
+
+.news-section .news .news-inner .news-text{
+	width: 100%;
+	border: 2px solid #e5e4ea !important;
+	padding: 0 30px 25px 30px;
+	border-top: none;
+}
+
+.news-section .news .news-inner .news-text h6{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #2b2828;
+	font-family: 'FjallaOne';
+	margin-top: 20px;
+}
+.news-section .news .news-inner .news-text p{
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.news-section .news .news-inner .news-text .news-p p{
+	float: left;
+}
+
+.news-section .news .news-inner .news-text .news-p .news-right{
+	float: right;
+}
+
+.news-section .news .news-inner .news-text a{
+	font-family: poppins-medium;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+	display: inline-block;
+	color: #2b2828;
+	margin-top: 22px;
+}
+/* =============================================
+			  End news Section                 
+================================================= */
+
+/* =============================================
+			  Start project Section                 
+================================================= */
+.project-section{
+	width: 100%;
+}
+
+.project-section .project{
+	width: 70%;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 5px 14px rgba(0, 0, 0, .25);
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.project-section .project .project-left{
+	width: 60%;
+	float: left;
+}
+.project-section .project h4{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #261e6b;
+	font-family: 'FjallaOne';
+	margin-top: 30px;
+	margin-left: 25px;
+}
+.project-section .project p{
+	font-size: 15px;
+	line-height: 23px;
+	font-weight: 400;
+	color: #636060;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+	margin-bottom: 40px;
+	margin-left: 25px;
+}
+
+.project-section .project .project-right{
+	width: 40%;
+	float: left;
+}
+
+.project-section .project .project-right .project-btn{
+	margin-top: 70px;
+	text-align: center;
+}
+
+.project-section .project .project-right .project-btn a{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #fff;
+	padding: 10px 30px;
+	background: #261e6b;
+	font-family: 'OpenSans-Bold';
+}
+
+.project-section .project .project-right .project-btn a:hover{
+	border: 2px solid #261e6b;
+	color: #261e6b;
+	background: transparent;
+}
+/* =============================================
+			  End project Section                 
+================================================= */
+
+/* =============================================
+			  Start-footer-Section                 
+================================================= */
+.footer-section{
+	width: 100%;
+	padding: 70px 0px;
+	background: url(../images/number-bg.png) center no-repeat;
+	background-size: cover;
+}
+.footer-section .footer{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.footer-section .footer .footer-left{
+	width: 40%;
+	float: left;
+}
+
+.footer-section .footer .footer-left img{
+	width: 50%;
+}
+
+.footer-section .footer .footer-left p{
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Open Sans-regular';
+	margin-top: 10px;
+}
+.footer-section .footer .footer-middle{
+	width: 30%;
+	float: left;
+	padding-left: 80px;
+}
+
+.footer-section .footer h6{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #fff;
+	font-family: 'FjallaOne';
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.footer-section .footer ul li{
+}
+
+.footer-section .footer ul li i{
+	color: #fff;
+	padding-right: 10px;
+} 
+.footer-section .footer ul li p{
+	font-size: 13px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Open Sans-regular';
+	display: inline;
+	margin-top: 15px;
+}
+.footer-section .footer .footer-right{
+	width:30%;
+	float: left;
+	padding-left: 60px;
+}
+/* =============================================
+			  End-footer-Section                 
+================================================= */
